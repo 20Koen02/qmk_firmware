@@ -1,14 +1,8 @@
-# VOID9
+# How to build & flash
 
-![VOID9](https://i.imgur.com/Db82OaX.jpg)
-
-A handwired 3x3 macropad.
-
-* Keyboard Maintainer: [Victor Lucachi](https://github.com/victorlucachi)
-* Hardware Supported: Pro Micro
-
-Make example for this keyboard (after setting up your build environment):
-
-    make handwired/void9:default
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+1. Open MYSYS2 MinGW 64-bit
+2. Compile with `qmk compile -kb handwired/void9 -km default`
+3. Open QMK Toolbox
+4. Tick the Auto-Flash box
+5. Press on the rotary encoder
+6. Should say "avrdude.exe done. Thank you." if successful
